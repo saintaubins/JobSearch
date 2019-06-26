@@ -3,7 +3,7 @@
 
 Let's kick it up a notch and build a modular and modern front end application using React!
 
-Like with project one, our Unit 2 project is a chance to be creative and build something you can be proud of. You will be working individually for this project, but we'll be guiding you along the process and helping as you go.
+Like with project one, our Unit 2 project is a chance to be creative and build something you can be proud of. You will be working individually for this project, but we'll be guiding you along the process and helping as you go. 
 
 As part of this project, you'll be required to show your project to your instructors and classmates in a five minute presentation in front of the class. Your goal for this presentation is to extract the most important aspects of what went into building your project into easy-to-use language and practice speaking about your code.
 
@@ -42,7 +42,7 @@ Show us what you've got!
 ## Necessary Deliverables
 #### A README with the following:
 
-**Refer to the [project worksheet](https://git.generalassemb.ly/wdi-nyc-bananas/project-2/blob/master/project-worksheet.md) file in this repo for structuring your README.**
+**Refer to the [project worksheet](https://git.generalassemb.ly/wdi-nyc-pandas/project-2/blob/master/project-worksheet.md) file in this repo for structuring your README.**
 
 ###### For the proposal:
 - A collection of wireframes - hand-drawn or digitally created - outlining the important pages of your site, as well as the critical states of your project, drawing a component hierarchy would be a great way to indicate which components need state and which components need props.
@@ -53,10 +53,12 @@ Show us what you've got!
 	- A visual of your component hierarchy.  
 	- A link to the API you plan to use.  
 	- A section clearly defining MVP and POST MVP.
-	- If you plan on incorporating a component library, include a link in your proposal.  
+	- If you plan on incorporating a component library, include a link in your proposal.
 
 #### For the project:
-- A git repository hosted on GitHub, with a link to your hosted project, and frequent commits dating back to the very beginning of the project (YOUR APP SHOULD BE LOCATED IN A SEPARATE STANDING REPO. DO NOT build your app in this repository. YOU MUST initiate a new repo on your GitHub account.)
+- A git repository hosted on GitHub, with a link to your hosted project, and **frequent** commits dating back to the very beginning of the project (YOUR APP SHOULD BE LOCATED IN A SEPARATE STANDING REPO. DO NOT build your app in this repository. YOU MUST initiate a new repo on your GitHub account.) 
+
+<hr>
 
 ## A Note on Plagiarism
 
