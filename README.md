@@ -3,9 +3,7 @@
 
 Let's kick it up a notch and build a modular and modern front end application using React!
 
-Like with project one, our Unit 2 project is a chance to be creative and build something you can be proud of.
-
-You will be working individually for this project, but we'll be guiding you along the process and helping as you go.
+Like with project one, our Unit 2 project is a chance to be creative and build something you can be proud of. You will be working individually for this project, but we'll be guiding you along the process and helping as you go.
 
 As part of this project, you'll be required to show your project to your instructors and classmates in a five minute presentation in front of the class. Your goal for this presentation is to extract the most important aspects of what went into building your project into easy-to-use language and practice speaking about your code.
 
@@ -20,13 +18,13 @@ Show us what you've got!
     - Pull data into the application using an API  
         [List of Public APIs](https://github.com/toddmotto/public-apis)  
         [More APIs](https://github.com/abhishekbanthia/Public-APIs)  
-	[Instructor Recommended APIs](https://git.generalassemb.ly/wdi-nyc-bananas/apis)
+	[Instructor Recommended APIs](https://git.generalassemb.ly/sei-nyc-pandas/apis)
     - TRY OUT your API in the browser by making an axios request before you get too emotionally invested in it, to make sure it works the way you think it does...**YOU ARE REQUIRED TO SHOW US YOU CAN RECEIVE THE DATA FOR YOUR PROPOSAL**
 - Use React Router installed using npm.
 - Have at least 6 separate components, using a readable file structure.
 - Be built using Create React App.
 - Be styled with CSS.
-- Use flexbox layout or CSS Grid.
+- Use Flexbox or CSS Grid for layouts.
 - Use functional components and class components appropriately.
 - Be deployed via GitHub and Surge.
 
@@ -41,19 +39,12 @@ Show us what you've got!
 - Use only React for DOM manipulation.  
 - No pre-loaded `create-react-app` files or code.
 
-#### Your README must include:
-
-- Name of your project.   
-- Brief description of the project.  
-- A link to your deployed project.  
-- Images of your wireframe and component hierarchy.  
-- A code snippet.  
-- User stories.  
-- **Refer to the [project worksheet](https://git.generalassemb.ly/wdi-nyc-bananas/project-2/blob/master/project-worksheet.md) file in this repo for structuring your README.**
-
 ## Necessary Deliverables
+#### A README with the following:
 
-#### For the proposal:
+**Refer to the [project worksheet](https://git.generalassemb.ly/wdi-nyc-bananas/project-2/blob/master/project-worksheet.md) file in this repo for structuring your README.**
+
+###### For the proposal:
 - A collection of wireframes - hand-drawn or digitally created - outlining the important pages of your site, as well as the critical states of your project, drawing a component hierarchy would be a great way to indicate which components need state and which components need props.
 - A proposal including:
 	- A description of the project you'll be building with the objective described in non-technical language.
