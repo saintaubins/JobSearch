@@ -1,25 +1,10 @@
 # Squads
 
 ## Brian's Squad
-- Robert
-- James
-- Mike Brown
-- Mike Fang
-- Annie
-- Bruno
+TBD
 
 ## Drake's Squad
-- Mikayda
-- Dan T
-- Austin
-- Julian
-- Akinyemi
-- Brian
+TBD
 
-## Jason's Squad
-- Darwin
-- Eric
-- Matt
-- Alfonso
-- Dan G
-- Shirin
+## Maddy & David's Squad
+TBD
