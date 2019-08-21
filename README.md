@@ -42,7 +42,7 @@ Show us what you've got!
 ## Necessary Deliverables
 #### A README with the following:
 
-**Refer to the [project worksheet](https://git.generalassemb.ly/sei-nyc-pandas/project-2/blob/master/project-worksheet.md) file in this repo for structuring your README.**
+**Refer to the [project worksheet](/project-worksheet.md) file in this repo for structuring your README.**
 
 ###### For the proposal:
 - A collection of wireframes - hand-drawn or digitally created - outlining the important pages of your site, as well as the critical states of your project, drawing a component hierarchy would be a great way to indicate which components need state and which components need props.
