@@ -16,12 +16,11 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 #### MVP EXAMPLE
 - Find and use external api 
 - Render data on page 
-- Allow user to choose favorites 
-- Save their choices in firebase
+- Allow user to interact with the page
 
 #### PostMVP EXAMPLE
 
-- Add user auth
+- Add localStorage or firebase for storage
 
 ## React Component Hierarchy
 
@@ -54,11 +53,11 @@ Helper functions should be generic enought that they can be reused in other appl
 | Capitalize | This will capitalize the first letter in a string of text | 
 
 ## Additional Libraries
- Use this section to list all supporting libraries and thier role in the project. 
+ Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description  
+Use this section to include a brief code snippet of functionality that you are proud of an a brief description.  Code snippet should not be greater than 10 lines of code. 
 
 ```
 function reverse(string) {
