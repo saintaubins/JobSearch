@@ -7,8 +7,8 @@ Use this section to describe your final project and perhaps any links to relevan
 
 ## Project Links
 
-[github repo]()
-[deployment]()
+- [github repo]()
+- [deployment]()
 
 ## Wireframes
 
