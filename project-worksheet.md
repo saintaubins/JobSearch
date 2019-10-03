@@ -21,12 +21,6 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 
 Define the the React components and the architectural design of your app.
 
-## API
-
-Provide a description and link to the API you have chosen for your project.
-
-Provide a small code sample of the returned data that you will use to build your app.
-
 ### MVP/PostMVP - 5min
 
 The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
