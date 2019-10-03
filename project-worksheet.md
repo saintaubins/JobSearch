@@ -14,6 +14,13 @@ Use this section to describe your final project and perhaps any links to relevan
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe.
 
+- [wireframes]()
+- [react architecture]()
+
+
+
+Define the the React components and the architectural design of your app.
+
 ## API
 
 Provide a description and link to the API you have chosen for your project.
@@ -32,10 +39,6 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 #### PostMVP EXAMPLE
 
 - Add localStorage or firebase for storage
-
-## React Component Hierarchy
-
-Define the the React components and the architectural design of your app.
 
 ## Components
 ##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
