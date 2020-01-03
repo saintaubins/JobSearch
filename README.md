@@ -18,7 +18,7 @@ Show us what you've got!
         [List of Public APIs](https://github.com/toddmotto/public-apis)  
         [More APIs](https://github.com/abhishekbanthia/Public-APIs)  
 	[Instructor Recommended APIs](https://git.generalassemb.ly/sei-nyc-pirates/apis)
-    - TRY OUT your API in the browser by making an axios request before you get too emotionally invested in it, to make sure it works the way you think it does...**YOU ARE REQUIRED TO SHOW US YOU CAN RECEIVE THE DATA FOR YOUR PROPOSAL**
+    - TRY OUT your API in the browser by making an fetch request before you get too emotionally invested in it, to make sure it works the way you think it does...**YOU ARE REQUIRED TO SHOW US YOU CAN RECEIVE THE DATA FOR YOUR PROPOSAL**
 - Use React Router installed using npm.
 - Have at least 6 separate components, using a readable file structure.
 - Be built using Create React App.
