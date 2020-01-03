@@ -1,6 +1,6 @@
 # Presentations
 
-You will prepare a short screencast (3-5 minutes) demonstrating your project, which you will upload to YouTube/Vimeo.
+You will prepare a short screencast (2-3 minutes) demonstrating your project, which you will upload to YouTube/Vimeo.
 
 ### Warnings
 
