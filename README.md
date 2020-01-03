@@ -12,7 +12,6 @@ Show us what you've got!
 ## Requirements
 
 #### Your website must:
-
 - Be a working, interactive, React application.
 - Include data from a third-party API.
     - Pull data into the application using an API  
@@ -26,7 +25,7 @@ Show us what you've got!
 - Be styled with CSS.
 - Use Flexbox or CSS Grid for layouts.
 - Use functional components and class components appropriately.
-- Be deployed via GitHub and Surge.
+- Be deployed via [Netlify](https://www.netlify.com/).
 
 - **Optionally, you may incorporate a component library to design your app with approval**
 
