@@ -77,10 +77,10 @@ Show us what you've got!
 
 After planning your app: 
 
-1. Start with building your models and linking them to the database. Create a couple pieces of seed data so that can see data retrieved from your database (by a mongoose model) show up on the page later.
-2. Build your controllers and routing, to 'funnel' or direct the data into your handlebars views.
-3. Build your views and add CSS styling.
-4. Add new features!
+1. Create your React architecture
+2. Build your Components
+3. Decided on your CSS styling.
+3. Add new features!
 
 ## Getting Unstuck
 
