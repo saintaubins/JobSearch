@@ -3,9 +3,9 @@
 
 Let's kick it up a notch and build a modular and modern front end application using React!
 
-Like with project one, our Unit 2 project is a chance to be creative and build something you can be proud of. You will be working individually for this project, but we'll be guiding you along the process and helping as you go. 
+Like with project one, the Unit 2 project is a chance to be creative and build something you should be proud of. You will be working individually for this project, but we'll be guiding you along the process and helping as you go. 
 
-As part of this project, you'll be required to show your project to your instructors and classmates in a five minute presentation in front of the class. Your goal for this presentation is to extract the most important aspects of what went into building your project into easy-to-use language and practice speaking about your code.
+You must submit your idea to your squad leader by noon EST Monday.
 
 Show us what you've got!
 
@@ -19,7 +19,7 @@ Show us what you've got!
         [More APIs](https://github.com/abhishekbanthia/Public-APIs)  
 	[Instructor Recommended APIs](https://git.generalassemb.ly/sei-nyc-pirates/apis)
     - TRY OUT your API in the browser by making an fetch request before you get too emotionally invested in it, to make sure it works the way you think it does...**YOU ARE REQUIRED TO SHOW US YOU CAN RECEIVE THE DATA FOR YOUR PROPOSAL**
-- Use React Router installed using npm.
+- Use React Router.
 - Have at least 6 separate components, using a readable file structure.
 - Be built using Create React App.
 - Be styled with CSS.
@@ -27,7 +27,7 @@ Show us what you've got!
 - Use functional components and class components appropriately.
 - Be deployed via [Netlify](https://www.netlify.com/).
 
-- **Optionally, you may incorporate a component library to design your app with approval**
+- **Optionally, you may incorporate a component library to design your app with approval, or use Next.js or Gatsby instead of React Router and Create React App**
 
 #### Your code must:
 
@@ -59,29 +59,52 @@ Show us what you've got!
 
 <hr>
 
+## Tips
+
+* **Commit early, commit often.**  Don't be afraid to break something because you can always go back in time to a previous version.
+
+## Planning
+
+1. [Watch this video on the Minimum Viable Product](https://www.youtube.com/watch?v=1FoCbbbcYT8)
+
+2. **Begin with the end in mind**. Spend a dedicated block of time to planning with ***wireframes*** and ***user stories*** so you don't waste time building things you don't need.
+3. **Write pseudocode before you write actual code**. Thinking through the logic of something helps streamline your process.
+4. **User stories define what a specific type of user wants to accomplish with your application**. It's tempting to just use your list of user stories as a ***todo list***, but try to avoid this. If you keep your user stories small and focused on what a user cares about being able to do. This will help you prioritize your tasks and which features to build first.
+
+> [Definition of User Stories](https://www.mountaingoatsoftware.com/agile/user-stories)
+
+## Building Out from your Plan
+
+After planning your app: 
+
+1. Start with building your models and linking them to the database. Create a couple pieces of seed data so that can see data retrieved from your database (by a mongoose model) show up on the page later.
+2. Build your controllers and routing, to 'funnel' or direct the data into your handlebars views.
+3. Build your views and add CSS styling.
+4. Add new features!
+
+## Getting Unstuck
+
+* **Don't hesitate to write messy code to solve short-term problems**&mdash;***Refactor later***
+* **Read the docs for whatever technologies you use**. The docs often include a tutorial that can help you get started, and learning to read documentation is crucial to your success as a developer.
+
+## Asking For Help
+
+### In-person Support
+
+Each student will be given 5 (five) tokens, redeemable at any time during regular
+class and Study Hall time (not including evening Office hours), for 20 minutes
+with an instructor. Tokens cannot be transferred between students - there is no
+black market for tokens.
+
+Instructors will not be holding open office hours during project week. This is
+to give you the opportunity to solve issues and errors you run in to on your own
+and with your classmates. Dan, however, will still hold his office hours as planned.
+
+An instructor will be assigned to each team and wil check in with your team
+every morning for about 15 minutes. The purpose of these check-ins is not to
+discuss technical questions, but to answer questions about workflow and get a status checkin.
+
 ## A Note on Plagiarism
 
-General Assembly has a **zero tolerance policy** towards plagiarism and cheating. It is destructive to classroom culture, and exhibits a clear lack of respect for classmates, instructors, the company, and the greater community. Any work considered to have been plagiarized will not be accepted and will not count towards graduation requirements. If a project exhibits evidence of plagiarism or cheating, the student will not be able to display the project at a GA-sponsored class “science fair” or “meet & greet.” Any student found plagiarizing or attempting to plagiarize will be disciplined accordingly (including but not limited to removal from class).
-
-Open source code is inherently open and usually available for free use to modify and implement into any non-commercial project. However, please review their license and usage guidelines, give credit to the project and/or author, and do not try to hide or disguise the usage of such code.
-
-You are encouraged to ask others, including students, instructors, and StackOverflow, for help. However, it is NOT ACCEPTABLE TO COPY another person's code and submit it as your own. More importantly, it is detrimental to your learning and growth.
-
-All of the following are considered plagiarism or cheating:
-- Turning in work that is not your own.
-- Turning in someone else's work as your own.
-- Hiring, or paying someone to do your work for you.
-- Copying words or code without giving credit.
-- Building or copying someone else’s idea without their knowledge or giving credit.
-- Giving incorrect information about a source.
-- Changing words, variable names, etc. but copying the code or files of a source without giving credit.
-- Copying so many ideas or code blocks from a source that it makes up the majority of your work, whether you give credit or not.
-- Failing to put a quotation in quotation marks.
-
-In an effort to not plagiarize, credit for this content goes to:
-- [Plagiarism.org](http://plagiarism.org/), specifically the “plagiarism 101” section.  Content was adapted for code.  For more information, please see:
-  - [What is Plagiarism](http://www.plagiarism.org/plagiarism-101/what-is-plagiarism)
-  - [Types of Plagiarism](http://www.plagiarism.org/plagiarism-101/types-of-plagiarism)
-  - [How do I safely write code in my own 'words' and not plagiarize?](http://programmers.stackexchange.com/questions/80167/how-do-i-safely-write-code-in-my-own-words-and-not-plagiarize)
-- [Avoiding Plagiarism:  Writing Computer Code](http://www.upenn.edu/academicintegrity/ai_computercode.html)
+Take a moment to re-familiarize yourself with the [plagiarism policy](https://git.generalassemb.ly/seir-1118/Administrative/blob/master/plagiarism.md), specifically on using work you find online and on work you do with other students.
 
