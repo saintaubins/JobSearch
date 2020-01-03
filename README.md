@@ -104,6 +104,21 @@ An instructor will be assigned to each team and wil check in with your team
 every morning for about 15 minutes. The purpose of these check-ins is not to
 discuss technical questions, but to answer questions about workflow and get a status checkin.
 
+#### Maximizing Effectiveness of Support Sessions
+
+Prior to using one of your tokens, we ***strongly recommend*** that you file an issue on this repository in order to both provide the instructor with a point of reference regarding your code and the issue you are having. This will enable us to give you more effective guidance.
+
+When you submit an issue please include the following:
+
+  1. A code snippet
+  2. A precise and specific description of your issue
+  3. What error you got
+  4. What you already tried to resolve your error and the result of those attempts
+
+> [Check here for details on this process](https://github.com/ga-dc/wdi12/blob/master/asking-for-help.md#during-project-weeks).
+
+We also strongly recommend **using Slack to get help from your classmates**. Chances are you all will be running into similar problems.
+
 ## A Note on Plagiarism
 
 Take a moment to re-familiarize yourself with the [plagiarism policy](https://git.generalassemb.ly/seir-1118/Administrative/blob/master/plagiarism.md), specifically on using work you find online and on work you do with other students.
