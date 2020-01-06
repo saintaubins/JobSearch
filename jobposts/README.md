@@ -57,8 +57,7 @@ Define the the React components and the architectural design of your app.
 | Connect to API and show it responding | H | 5hrs | 5hrs |  |
 | Develop code for App | H | 2hrs |  |  |
 | Develop code for Header and Main | H | 4hrs |  |  |
-| Develop code for characters, houses, and spells | H | 8hrs |  |  |
-| Develop code for sorting hat page | H | 3hrs |  |  |
+| Develop code for sorting Description page | H | 8hrs |  |  |
 | Stylize the app | H | 5hrs |  |  |
 | Work on final documentation | H | 3hrs |  |  |
 | Total | H | 34hrs |  |  |
