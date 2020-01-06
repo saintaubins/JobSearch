@@ -9,12 +9,12 @@ This website will have jobs posintgs from a thir party API, which is GITHUB Jobs
 
 ## Project Links
 
-- [github repo](https://github.com/arreid08/harry_potter)
+- [github repo](https://git.generalassemb.ly/saintaubins/project-2/tree/master/jobposts)
 <!-- - [deployment]() -->
 
 ## Wireframes
 
-- [Initial Wireframe](https://res.cloudinary.com/john-deere/image/upload/v1578321821/wireframe1_kifapa.jpg)
+- [Initial Wireframe](https://drive.google.com/file/d/0B7ROCI4yBH-tMFNNbGVRQ0JyclBHZjZOTGViQkR4VDN2TUVF/view?usp=sharing)
 	- this is my initial thinking of how I want my page to work.
 <!-- - [react architecture]() -->
 
