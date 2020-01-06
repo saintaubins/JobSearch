@@ -23,17 +23,17 @@ Define the the React components and the architectural design of your app.
 ### MVP/PostMVP
 
 #### MVP
-- Find an external API for Harry Potter info.
+- Find an external API for GITHUB Jobs.
 - Develop an app that displays the info and can be interacted with.
-- Create links to each category (characters, houses, spells)
-- Show a sorting hat on the main page to use for sorting the user into a house.
-- Create pages for each of the categories to display details on.
-- Use the Harry Potter font on my page.
+- Create links to each job in the search result.
+- Show a job description, and search location field .
+- Create a page to display the job description details. 
+- Use profesional fonts on my pages.
 
 #### PostMVP EXAMPLE
-- Find a second API with images for Harry Potter
-- Add a place to save your favorite characters or spells.
-- Log which house the user was placed in even if the page refreshes.
+- Very detailed styling, with nice colors.
+- To make it mobile reactive.
+- Add react hooks.
 
 ## Components
 
@@ -42,19 +42,19 @@ Define the the React components and the architectural design of your app.
 | App | This will make the initial data pull and include React Router| 
 | Header | This will render the header include the nav | 
 | Main | This will render the main page | 
-| Characters | This will render characters page | 
-| Character Details | This will render the character details page | 
-| Houses | This will render the houses page | 
-| Spells | This will render the spells page | 
-| Sorting Hat | This will render the sorting hat page showing the house you are in | 
+| Job Description | This will render the Job Description field | 
+| Location | This will render the locations field | 
+| Footer | This will render the footer | 
+| Navigation | This will render the navigation links | 
+| Search | This will sort through the data, and render available matches | 
 
 ## Time Frames
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Planning | H | 4hrs | 3hrs |  |
-| Create all initial files and initial React setup | H | 3hrs | 1hr |  |
-| Connect to API and show it responding | H | 2hrs |  |  |
+| Planning | H | 4hrs | 4hrs |  |
+| Create all initial files and initial React setup | H | 3hrs | 3hrs |  |
+| Connect to API and show it responding | H | 5hrs | 5hrs |  |
 | Develop code for App | H | 2hrs |  |  |
 | Develop code for Header and Main | H | 4hrs |  |  |
 | Develop code for characters, houses, and spells | H | 8hrs |  |  |
