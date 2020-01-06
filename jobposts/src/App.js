@@ -40,8 +40,6 @@ class App extends Component {
     //   })
     // })
     fetch('https://cors-anywhere.herokuapp.com/jobs.github.com/positions.json?description=python&full_time=true&location=sf') 
-    //fetch("https://api.nasa.gov/planetary/apod?api_key=qkx5E5kWK623Rrt10Wsq9klJTuUhdp9pHv24tPvO")
-    //fetch('https://images-api.nasa.gov/search?q=earth')
     .then(res => res.json())
     .then(
       (result) => {
@@ -70,23 +68,15 @@ class App extends Component {
     } else if (!isLoaded) {
       return <div>Loading...</div>;
     } else {
-      console.log(this.state.items.collection.items)
+      console.log(this.state.items)
       return (
         <ul>
-          
-          {this.state.items.collection.items.map(item => (
-            <div>
+          {this.state.items.map(item => (
               <div>
-              <a href={item.href} key={item.href}>
-                {item.href}
+              <a href={item.url} key={item.id}>
+                {item.url}
               </a>
               </div>
-              <div>
-              <a href={item.href} key={item.data.nasa_id}>
-                {item.data.description}
-              </a>
-              </div>
-            </div>
           ))}
         </ul>
       );
