@@ -55,8 +55,8 @@ Define the the React components and the architectural design of your app.
 | Planning | H | 4hrs | 4hrs |  |
 | Create all initial files and initial React setup | H | 3hrs | 3hrs |  |
 | Connect to API and show it responding | H | 5hrs | 5hrs |  |
-| Develop code for App | H | 2hrs |  |  |
-| Develop code for Header, Navigation and Main | H | 4hrs |  |  |
+| Develop code for App | H | 2hrs | 3hrs |  |
+| Develop code for Header, Navigation and Main | H | 4hrs | 6hrs |  |
 | Develop code for sorting Description page | H | 8hrs |  |  |
 | Stylize the app | H | 5hrs |  |  |
 | Work on final documentation | H | 3hrs |  |  |
