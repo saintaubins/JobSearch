@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import { Route, Link, Switch, Redirect } from "react-router-dom";
+import { Route, Link } from "react-router-dom";
 
 
 class Footer extends Component {
     render() {
         return (
-            <div>
-                <h1>The Footer</h1>
+            <div className='footer'>
+                <h3>API from GitHub Jobs</h3>
             </div>
         )
     }

@@ -1,15 +1,43 @@
 
-h1 {
+h2 {
   text-align: center;
+  color: rgba(38, 110, 38, 0.9);
 }
 a {
- 
-text-decoration: none;
-display: inline-block;
-color: white;
+  text-decoration: none;
+  display: inline-block;
+  color: rgb(117, 39, 39);
+
 }
 
 .nav {
-text-align: center; 
-background-color: rgb(38, 58, 51);
+  text-align: center; 
+  background-color: rgba(38, 58, 51, 0.9);
+  width: 100%;
 }
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(90, 47, 22, 0.9);
+  color:white;
+  text-align: center;
+}
+
+.label {
+  display: inline-block;
+  width: 30%; 
+  position: relative;
+}
+
+#link {
+  /* color: black; */
+  /* text-align: center; */
+}
+
+/* li {
+  border: 1px rgb(117, 39, 39) solid;
+  padding: 10px;
+} */

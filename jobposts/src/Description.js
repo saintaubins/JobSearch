@@ -1,5 +1,16 @@
 import React, { Component } from "react";
-import { Route, Link, Switch, Redirect } from "react-router-dom";
+import { Route, Link } from "react-router-dom";
+import Background from './images/back3.jpg';
+let sectionStyle = {
+    backgroundImage: `url( ${ Background } )`,
+    width: '100%',
+    height: '1400px',
+    position: 'absolute',
+    backgroundPosition: 'center',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat'
+    
+};
 
 class Description extends Component {
     constructor(props){
@@ -7,8 +18,8 @@ class Description extends Component {
     }
     render() {
         return (
-            <div>
-               <h1>The Description Page</h1> 
+            <div style={ sectionStyle }>
+               <h2> Job Description </h2> 
             </div>
         )
     }
