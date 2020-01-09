@@ -34,8 +34,8 @@ class Nav extends Component {
                     /> )} />
                 
             </main> 
-        </Router>
-            </div>
+                </Router>
+        </div>
         )
     }
 }

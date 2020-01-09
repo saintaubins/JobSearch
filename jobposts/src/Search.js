@@ -32,54 +32,48 @@ class Search extends Component {
         this.handleChangeLocation = this.handleChangeLocation.bind(this);
         this.handleCheckbox = this.handleCheckbox.bind(this);
     }
-
     handleChangeDescription(event) {
         this.setState({jobDescription: event.target.value});
     }
-
     handleChangeLocation(event) {
         this.setState({location: event.target.value});
     }
-
     handleCheckbox(event) {
         this.setState({checked: event.target.checked});
         console.log('checkbox = '+ this.state.checked);
     }
-     
     render() {
-       
         return (
-            
             <div style={ backgroundStyle }>
                 <h2>Job Search Page</h2>
                 <form onSubmit={e => this.props.handleSubmit(e, this.state.jobDescription, this.state.location, this.state.checked)} style={{display: 'flex'}}>
-                    Job Description
+                    <p>Job Desc</p>
                     <input  
                         type='text'
                         name='jobDescription'
-                        style={{ flex: '3', padding: '5px'}}
+                        style={{ flex: '3', padding: '1px'}}
                         placeholder='Job Description' 
                         value={this.state.jobDescription} 
                         onChange={this.handleChangeDescription} 
                     />
-                    Location
+                    <p>Loc</p>
                         <input
                         type='text'
-                        style={{ flex: '3', padding: '5px'}}
+                        style={{ flex: '2', padding: '1px'}}
                         placeholder='Location'
                         value={this.state.location} 
                         onChange={this.handleChangeLocation} 
                     />
-                        Full Time Only
+                     <p>F T</p>   
                     <Checkbox 
-                        style={{ flex: '1', padding: '5px'}}
+                        style={{ flex: '.2', padding: '1px'}}
                         checked={this.state.checked} 
                         onChange={this.handleCheckbox} 
                     />
                     <input 
                         type='submit' 
                         value='Submit' 
-                        style={{flex: '1', padding: '5px'}}
+                        style={{flex: '.7', padding: '1px'}}
                     />
                 </form>
                 <ol>

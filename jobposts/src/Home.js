@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Route, Link } from "react-router-dom";
+import './App.css';
 import Background from './images/back4.jpg';
 let sectionStyle = {
     backgroundImage: `url( ${ Background } )`,
@@ -11,7 +12,6 @@ let sectionStyle = {
     backgroundRepeat: 'no-repeat'
     
 };
-
 class Home extends Component {
     constructor(props){
         super(props)

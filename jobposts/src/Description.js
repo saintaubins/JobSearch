@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { Route, Link } from "react-router-dom";
-import Background from './images/back2.jpg';
+import './App.css';
+
 let sectionStyle = {
-    backgroundImage: `url( ${ Background } )`,
+    //backgroundImage: `url( ${ Background } )`,
     width: '100%',
     height: '2500px',
     position: 'absolute',
@@ -11,7 +11,6 @@ let sectionStyle = {
     backgroundRepeat: 'no-repeat'
     
 };
-
 class Description extends Component {
     constructor(props){
         super(props);
@@ -29,14 +28,12 @@ class Description extends Component {
             type: [],
             url: []
         };
-    }
-        
+    }  
     render() {
 
         const link = this.props.match.params.title;
         let item = this.props.items.find(item => link === item.title)
-        
-   
+    
     if (!item) {
       return <div>Loading...</div>;
     } else {

@@ -46,7 +46,6 @@ class App extends Component {
       }
     )
 }
-
 componentDidMount() {
   fetch(
       url + 
@@ -75,8 +74,6 @@ componentDidMount() {
     }
   )
 }
-
-
   render() {
     const { error, isLoaded, items } = this.state;
     if (error) {
