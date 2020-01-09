@@ -23,9 +23,16 @@ class Nav extends Component {
                     </div>
           
             <main>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/Search" component={Search} />
-              <Route exact path="/Description" component={Description} />
+                <Route exact path="/" component={Home} />
+                <Route exact path="/Search" render={props => (
+                  <Search
+                        {...props} handleSubmit={this.props.handleSubmit} items={this.props.items}
+                    /> )} />
+                <Route exact path="/Description/:title" render={props => (
+                    <Description
+                        {...props} items={this.props.items}
+                    /> )} />
+                
             </main> 
         </Router>
             </div>

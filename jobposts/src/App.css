@@ -32,12 +32,8 @@ a {
   position: relative;
 }
 
-#link {
-  /* color: black; */
-  /* text-align: center; */
+img {
+  max-width:50%;
+  max-height: 50%;
 }
 
-/* li {
-  border: 1px rgb(117, 39, 39) solid;
-  padding: 10px;
-} */

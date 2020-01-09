@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
+import { Route, Link } from "react-router-dom";
 import Background from './images/back1.jpg';
 import './App.css';
+import Description from './Description';
 
 let backgroundStyle = {
     backgroundImage: `url( ${ Background } )`,
@@ -30,7 +31,6 @@ class Search extends Component {
         this.handleChangeDescription = this.handleChangeDescription.bind(this);
         this.handleChangeLocation = this.handleChangeLocation.bind(this);
         this.handleCheckbox = this.handleCheckbox.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     handleChangeDescription(event) {
@@ -45,90 +45,14 @@ class Search extends Component {
         this.setState({checked: event.target.checked});
         console.log('checkbox = '+ this.state.checked);
     }
-
-    handleSubmit(event) {
-        event.preventDefault();
-        //this.setState({jobDescription: jobDescription});
-        console.log('jobDescription = '+this.state.jobDescription);
-        console.log('location = '+ this.state.location);
-        fetch(
-            url + 
-            'description=' + 
-            this.state.jobDescription + 
-            '&full_time=' +
-            this.state.checked +
-            '&location=' + this.state.location
-            ) 
-        .then(res => res.json())
-        .then(
-          (result) => {
-            console.log('jobDescription = '+this.state.jobDescription);
-            console.log('location = '+ this.state.location);
-            console.log(result)
-            this.setState({
-              isLoaded: true,
-              items: result
-            });
-          },
-          //Note: it's important to handle errors here
-          // instead of a catch() block so that we don't swallow
-          //exceptions from actual bugs in components.
-          (error) => {
-            this.setState({
-              isLoaded: true,
-              error
-            });
-          }
-        )
-    }
-    
-    componentDidMount() {
-        fetch(
-            url + 
-            'description=' + 
-            this.state.jobDescription + 
-            '&full_time=' +
-            this.state.checked +
-            '&location=' + this.state.location
-            ) 
-        .then(res => res.json())
-        .then(
-          (result) => {
-            console.log('jobDescription = '+this.state.jobDescription);
-            console.log('location = '+ this.state.location);
-            console.log(result)
-            this.setState({
-              isLoaded: true,
-              items: result
-            });
-          },
-          //Note: it's important to handle errors here
-          // instead of a catch() block so that we don't swallow
-          //exceptions from actual bugs in components.
-          (error) => {
-            this.setState({
-              isLoaded: true,
-              error
-            });
-          }
-        )
-      }
-      
-
+     
     render() {
-        const { error, isLoaded } = this.state;
-            if (error) {
-            return <div>Error: {error.message}</div>;
-            } else if (!isLoaded) {
-            return <div>Loading...</div>;
-            } else {
-        console.log(this.state.items);
        
         return (
             
             <div style={ backgroundStyle }>
                 <h2>Job Search Page</h2>
-                <form onSubmit={this.handleSubmit} style={{display: 'flex'}}>
+                <form onSubmit={e => this.props.handleSubmit(e, this.state.jobDescription, this.state.location, this.state.checked)} style={{display: 'flex'}}>
                     Job Description
                     <input  
                         type='text'
@@ -141,7 +65,6 @@ class Search extends Component {
                     Location
                         <input
                         type='text'
-                        //name='location' 
                         style={{ flex: '3', padding: '5px'}}
                         placeholder='Location'
                         value={this.state.location} 
@@ -160,15 +83,25 @@ class Search extends Component {
                     />
                 </form>
                 <ol>
-                    {this.state.items.map(item => (
+                    {this.props.items.map(item => (
                         <li key={item.id}>
-                            <Link style ={linkStyle} to='/Description' >
+                            <Link to={'/Description/' +item.title}>
                                 <hr />
                                 {item.title} <br />
                                 {item.company}
                                 {item.location} 
                                 {item.type} 
                             </Link>
+                            <Route 
+                                path='/Description/:myLink'
+                                render={props => (
+                                <Description
+                                handleChangeDescription={this.handleChangeDescription}
+                                {...props} 
+                                jobDescription={this.state.jobDescription} 
+                                />  
+                              )}  
+                            />
                         </li>
                     ))}
                 </ol>
@@ -176,7 +109,7 @@ class Search extends Component {
         )
     }
 }
-}
+
 export default Search
 
 const linkStyle = {

@@ -33,7 +33,7 @@ Define the the React components and the architectural design of your app.
 #### PostMVP EXAMPLE
 - Very detailed styling, with nice colors.
 - To make it mobile reactive.
-- Add react hooks.
+- Add react hooks, and automated testing.
 
 ## Components
 
@@ -57,7 +57,7 @@ Define the the React components and the architectural design of your app.
 | Connect to API and show it responding | H | 5hrs | 5hrs |  |
 | Develop code for App | H | 2hrs | 3hrs |  |
 | Develop code for Header, Navigation and Main | H | 4hrs | 6hrs |  |
-| Develop code for sorting Description page | H | 8hrs |  |  |
+| Develop code for sorting Description page | H | 8hrs | 8hrs |  |
 | Stylize the app | H | 5hrs |  |  |
 | Work on final documentation | H | 3hrs |  |  |
 | Total | H | 34hrs |  |  |
