@@ -19,7 +19,8 @@ class Home extends Component {
     render() {
         return (
             <div style={ sectionStyle }>
-               <h2>The Home Page</h2> 
+               <h2>The Home Page</h2>
+               <button>Search Now</button> 
             </div>
         )
     }

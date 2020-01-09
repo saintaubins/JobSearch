@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState, Component, useEffect } from 'react';
 import Footer from "./Footer";
 import Nav from "./Nav";
 import './App.css';
@@ -46,14 +46,15 @@ class App extends Component {
       }
     )
 }
-componentDidMount() {
+// useEffect(() => {
+  componentDidMount() {
   fetch(
       url + 
       'description=' + 
-      ' ' +
+      'python' +
       '&full_time=' +
-      false +
-      '&location=' + ' '
+      true +
+      '&location=' + 'sf'
       ) 
   .then(res => res.json())
   .then(
@@ -61,6 +62,7 @@ componentDidMount() {
       this.setState({
         isLoaded: true,
         items: result
+      // },[]); if adding useEffect
       });
     },
     //Note: it's important to handle errors here
@@ -70,7 +72,7 @@ componentDidMount() {
       this.setState({
         isLoaded: true,
         error
-      });
+      }); 
     }
   )
 }
@@ -86,6 +88,7 @@ componentDidMount() {
         <React.Fragment>
           <Nav handleSubmit={this.handleSubmit} items={this.state.items}/>
           <Footer />
+          <h1>{'App'}</h1>
         </React.Fragment>
       );
     }

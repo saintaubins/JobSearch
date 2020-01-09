@@ -58,9 +58,9 @@ Define the the React components and the architectural design of your app.
 | Develop code for App | H | 2hrs | 3hrs |  |
 | Develop code for Header, Navigation and Main | H | 4hrs | 6hrs |  |
 | Develop code for sorting Description page | H | 8hrs | 8hrs |  |
-| Stylize the app | H | 5hrs |  |  |
-| Work on final documentation | H | 3hrs |  |  |
-| Total | H | 34hrs |  |  |
+| Stylize the app | H | 5hrs | 5hrs |  |
+| Work on final documentation | H | 3hrs | 3hrs |  |
+| Total | H | 34hrs | 37hrs |  |
 
 ## Additional Libraries
  <!-- Use this section to list all supporting libraries and their role in the project such as Axios, ReactStrap, D3, etc.  -->
