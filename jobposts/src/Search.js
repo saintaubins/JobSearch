@@ -44,7 +44,7 @@ class Search extends Component {
     }
     render() {
         return (
-            <div style={ backgroundStyle }>
+            <div style={backgroundStyle}>
                 <h2>Job Search Page</h2>
                 <form onSubmit={e => this.props.handleSubmit(e, this.state.jobDescription, this.state.location, this.state.checked)} style={{display: 'flex'}}>
                     <p>Job Desc</p>
