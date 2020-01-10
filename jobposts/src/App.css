@@ -32,7 +32,7 @@
     font-size: 13px;
   }
   p {
-    font-size: 10px;
+    font-size: 13px;
   }
   input {
     width: 5px;
@@ -43,9 +43,37 @@
     max-height: 20%;
   }
 }
+p {
+  font-size: 20px;
+  /* color: rgb(117, 39, 39); */
+  /* text-shadow:  1px 1px rgba(38, 58, 51, 0.9); */
+}
 h2 {
   text-align: center;
   color: rgba(38, 110, 38, 0.9);
+}
+li {
+  font-size: 20px;
+  /* color: rgb(117, 39, 39); */
+  /* text-shadow:  1px 1px lightblue; */
+} 
+#button {
+  display: block;
+  max-width: 300px;
+  position: center;
+  margin: auto;
+  border-radius: 18px;
+  font-size: 16px;
+  color: rgb(117, 39, 39);
+  padding: 20px;
+  background-color: Transparent;
+  cursor: pointer;
+  border: 2px solid rgba(74, 119, 103, 0.9);
+  background-position: center,
+}
+#button:hover { 
+  background-color: rgb(117, 39, 39);
+  color: rgba(74, 119, 103, 0.9);
 }
 body {
   margin: 0;
@@ -54,6 +82,11 @@ a {
   text-decoration: none;
   display: inline-block;
   color: rgb(117, 39, 39);
+}
+a:hover {
+  text-decoration: none;
+  display: inline-block;
+  color: rgb(153, 114, 114);
 }
 .nav {
   text-align: center; 

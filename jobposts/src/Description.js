@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import './App.css';
+import Background from './images/back5.jpg';
 
 let sectionStyle = {
     //backgroundImage: `url( ${ Background } )`,
@@ -8,26 +9,27 @@ let sectionStyle = {
     position: 'absolute',
     backgroundPosition: 'center',
     backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat'
+    backgroundRepeat: 'no-repeat',
+    backgroundColor: 'lightgrey'
     
 };
 class Description extends Component {
     constructor(props){
         super(props);
-        this.state = {
-            result:[],
-            companyLogo: [],
-            title: [],
-            companyUrl: [],
-            createdAt: [],
-            company: [],
-            description: [],
-            howToApply: [],
-            id: [],
-            location: [],
-            type: [],
-            url: []
-        };
+        // this.state = {
+        //     result:[],
+        //     companyLogo: [],
+        //     title: [],
+        //     companyUrl: [],
+        //     createdAt: [],
+        //     company: [],
+        //     description: [],
+        //     howToApply: [],
+        //     id: [],
+        //     location: [],
+        //     type: [],
+        //     url: []
+        // };
     }  
     render() {
 

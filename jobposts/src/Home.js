@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useEffect } from "react";
 import { Route, Link } from "react-router-dom";
 import './App.css';
 import Background from './images/back4.jpg';
@@ -12,18 +12,27 @@ let sectionStyle = {
     backgroundRepeat: 'no-repeat'
     
 };
-class Home extends Component {
-    constructor(props){
-        super(props)
-    }
-    render() {
+//Added React hook use effect, funtion based component
+function Home() {
+    useEffect(() => {
+        console.log('useEffect was called, added react hooks');
+      });
         return (
-            <div style={ sectionStyle }>
-               <h2>The Home Page</h2>
-               <button>Search Now</button> 
+            <div>
+                <div style={ sectionStyle }>
+                    <h2>The Home Page</h2>
+                    <div> 
+                        <center>
+                            <Link to='/Search' >
+                                <button id='button'>Search Jobs Now</button>
+                            </Link> 
+                        </center>
+                    </div>
+                   
+                </div>
+                
             </div>
         )
-    }
 }
 
 export default Home

@@ -46,7 +46,7 @@ class App extends Component {
       }
     )
 }
-// useEffect(() => {
+// useEffect cannot be used here because it is a class-based component
   componentDidMount() {
   fetch(
       url + 
@@ -54,7 +54,7 @@ class App extends Component {
       'python' +
       '&full_time=' +
       true +
-      '&location=' + 'sf'
+      '&location=' + 'newyork'
       ) 
   .then(res => res.json())
   .then(
@@ -62,7 +62,6 @@ class App extends Component {
       this.setState({
         isLoaded: true,
         items: result
-      // },[]); if adding useEffect
       });
     },
     //Note: it's important to handle errors here
@@ -88,7 +87,7 @@ class App extends Component {
         <React.Fragment>
           <Nav handleSubmit={this.handleSubmit} items={this.state.items}/>
           <Footer />
-          <h1>{'App'}</h1>
+          {/* <h1>{'App'}</h1> */}
         </React.Fragment>
       );
     }

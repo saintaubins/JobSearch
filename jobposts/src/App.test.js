@@ -27,7 +27,7 @@ let component
     const wrapper = shallow(<App />); // 5
                             
     expect(global.fetch).toHaveBeenCalledTimes(1);
-    expect(global.fetch).toHaveBeenCalledWith('https://cors-anywhere.herokuapp.com/jobs.github.com/positions.json?description=python&full_time=true&location=sf');
+    expect(global.fetch).toHaveBeenCalledWith('https://cors-anywhere.herokuapp.com/jobs.github.com/positions.json?description=python&full_time=true&location=newyork');
 
     process.nextTick(() => { // 6
       expect(wrapper.state('isLoaded')).toEqual(

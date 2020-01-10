@@ -60,10 +60,15 @@ Define the the React components and the architectural design of your app.
 | Develop code for sorting Description page | H | 8hrs | 8hrs |  |
 | Stylize the app | H | 5hrs | 5hrs |  |
 | Work on final documentation | H | 3hrs | 3hrs |  |
-| Total | H | 34hrs | 37hrs |  |
+| Completing PostMVP items | H | 5hrs | 5hrs |  |
+| Total | H | 39hrs | 42hrs |  |
 
 ## Additional Libraries
  <!-- Use this section to list all supporting libraries and their role in the project such as Axios, ReactStrap, D3, etc.  -->
+ I incorporated testing using Jest and Enzyme. The code to add the additional library is as follows:
+ "npm i --save-dev enzyme enzyme-adapter-react-16"
+ This was necessary to run in the testing environment, otherwise the command "npm run test" will not launch
+ the test.
 
 ## Code Snippet
 

@@ -72,7 +72,7 @@ class Search extends Component {
                     />
                     <input 
                         type='submit' 
-                        value='Submit' 
+                        value='Search' 
                         style={{flex: '.7', padding: '1px'}}
                     />
                 </form>
@@ -81,10 +81,10 @@ class Search extends Component {
                         <li key={item.id}>
                             <Link to={'/Description/' +item.title}>
                                 <hr />
-                                {item.title} <br />
-                                {item.company}
+                                {item.title} {item.type} <br />
+                                {item.company}{','}
                                 {item.location} 
-                                {item.type} 
+                                
                             </Link>
                             <Route 
                                 path='/Description/:myLink'
