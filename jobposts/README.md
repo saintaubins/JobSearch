@@ -79,6 +79,21 @@ function reverse(string) {
 	// here is the code to reverse a string of text
 }
 ``` -->
+One of the tests that I ran was able to test my API, and give a positive response when the data was returned:
+
+"it('fetches data from server when server returns a successful response', done => { // 1
+    const mockSuccessResponse = {};
+    const mockJsonPromise = Promise.resolve(mockSuccessResponse); // 2
+    const mockFetchPromise = Promise.resolve({ // 3
+      json: () => mockJsonPromise,
+    });
+    jest.spyOn(global, 'fetch').mockImplementation(() => mockFetchPromise); // 4
+    
+    const wrapper = shallow(<App />); // 5
+                            
+    expect(global.fetch).toHaveBeenCalledTimes(1);"
+this is only a portion of the code, the rest of it is available.
+
 
 ## Issues and Resolutions
  <!-- Use this section to list of all major issues encountered and their resolution. -->
@@ -86,3 +101,6 @@ function reverse(string) {
 <!-- #### SAMPLE.....
 **ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
 **RESOLUTION**: Missing comma after first object in sources {} object -->
+A big issue i had was passing props from sibling to sibling.
+The solution was to start the data fetch from App.js, and to propogate the props down to the components
+that needed them. 
