@@ -81,7 +81,7 @@ function reverse(string) {
 ``` -->
 One of the tests that I ran was able to test my API, and give a positive response when the data was returned:
 
-"it('fetches data from server when server returns a successful response', done => { // 1
+it('fetches data from server when server returns a successful response', done => { // 1
     const mockSuccessResponse = {};
     const mockJsonPromise = Promise.resolve(mockSuccessResponse); // 2
     const mockFetchPromise = Promise.resolve({ // 3
@@ -91,7 +91,7 @@ One of the tests that I ran was able to test my API, and give a positive respons
     
     const wrapper = shallow(<App />); // 5
                             
-    expect(global.fetch).toHaveBeenCalledTimes(1);"
+    expect(global.fetch).toHaveBeenCalledTimes(1);
 this is only a portion of the code, the rest of it is available.
 
 
