@@ -1,5 +1,4 @@
-import React, { Component, useEffect } from 'react';
-import { Route, Link } from "react-router-dom";
+import React, { useEffect } from 'react';
 import './App.css';
 
 // Uese effect called just for example exercise

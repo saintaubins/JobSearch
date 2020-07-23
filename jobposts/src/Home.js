@@ -1,5 +1,5 @@
-import React, { Component, useEffect } from "react";
-import { Route, Link } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import './App.css';
 import Background from './images/back4.jpg';
 let sectionStyle = {

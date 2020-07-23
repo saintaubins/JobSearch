@@ -12,13 +12,10 @@ class Nav extends Component {
                 <Router>
                     <div className='nav' >
                         <Link to="/">
-                            <h1>{'Home '}</h1>
+                            <h1>{ 'Home' }</h1>
                         </Link>
                         <Link to="/Search">
-                            <h1>{' | Search | '}</h1>
-                        </Link>
-                        <Link to="/Description">
-                            <h1>{' Description'}</h1>
+                            <h1>{ 'Search' }</h1>
                         </Link>
                     </div>
           
@@ -33,7 +30,7 @@ class Nav extends Component {
                         {...props} items={this.props.items}
                     /> )} />
                 
-            </main> 
+            </main>  
                 </Router>
         </div>
         )

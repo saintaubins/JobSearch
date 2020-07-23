@@ -14,7 +14,7 @@ let backgroundStyle = {
     backgroundRepeat: 'no-repeat'
 };
 
-const url = 'https://cors-anywhere.herokuapp.com/jobs.github.com/positions.json?';
+//const url = 'https://cors-anywhere.herokuapp.com/jobs.github.com/positions.json?';
 const Checkbox = props => (
     <input type='checkbox' {...props} />
 )
@@ -46,7 +46,9 @@ class Search extends Component {
         return (
             <div style={backgroundStyle}>
                 <h2>Job Search Page</h2>
-                <form onSubmit={e => this.props.handleSubmit(e, this.state.jobDescription, this.state.location, this.state.checked)} style={{display: 'flex'}}>
+                <form onSubmit={e => this.props.handleSubmit(e, this.state.jobDescription, this.state.location, this.state.checked)} 
+                style={{display: 'flex'}}
+                >
                     <p>Job Desc</p>
                     <input  
                         type='text'
@@ -106,7 +108,7 @@ class Search extends Component {
 
 export default Search
 
-const linkStyle = {
-    // color: '#fff',
-    // textDecoration: 'none'
-}
+// const linkStyle = {
+//     // color: '#fff',
+//     // textDecoration: 'none'
+// }

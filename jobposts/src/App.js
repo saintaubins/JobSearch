@@ -1,9 +1,9 @@
-import React, { useState, Component, useEffect } from 'react';
+import React, { Component } from 'react';
 import Footer from "./Footer";
 import Nav from "./Nav";
 import './App.css';
 
-const url = 'https://cors-anywhere.herokuapp.com/jobs.github.com/positions.json?';
+const url = 'https://still-river-88047.herokuapp.com/jobs.github.com/positions.json?';
 
 class App extends Component {
   constructor(props) {
@@ -28,8 +28,7 @@ class App extends Component {
         location
         ) 
     .then(res => res.json())
-    .then(
-      (result) => {
+    .then((result) => {
         this.setState({
           isLoaded: true,
           items: result
@@ -54,11 +53,10 @@ class App extends Component {
       'python' +
       '&full_time=' +
       true +
-      '&location=' + 'newyork'
+      '&location=newyork'
       ) 
   .then(res => res.json())
-  .then(
-    (result) => {
+  .then((result) => {
       this.setState({
         isLoaded: true,
         items: result
@@ -74,11 +72,11 @@ class App extends Component {
       }); 
     }
   )
-}
+} 
   render() {
-    const { error, isLoaded, items } = this.state;
+    const { error, isLoaded } = this.state;
     if (error) {
-    return <div>Error: {error.message}</div>;
+    return <div>The Error: {error.message}</div>;
     } else if (!isLoaded) {
       return <div>Loading...</div>;
     } else {
@@ -87,7 +85,6 @@ class App extends Component {
         <React.Fragment>
           <Nav handleSubmit={this.handleSubmit} items={this.state.items}/>
           <Footer />
-          {/* <h1>{'App'}</h1> */}
         </React.Fragment>
       );
     }

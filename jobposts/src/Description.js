@@ -14,25 +14,11 @@ let sectionStyle = {
     
 };
 class Description extends Component {
-    constructor(props){
-        super(props);
-        // this.state = {
-        //     result:[],
-        //     companyLogo: [],
-        //     title: [],
-        //     companyUrl: [],
-        //     createdAt: [],
-        //     company: [],
-        //     description: [],
-        //     howToApply: [],
-        //     id: [],
-        //     location: [],
-        //     type: [],
-        //     url: []
-        // };
-    }  
+    // constructor(props){
+    //     super(props);
+    // }  
     render() {
-
+        
         const link = this.props.match.params.title;
         let item = this.props.items.find(item => link === item.title)
     
@@ -44,7 +30,7 @@ class Description extends Component {
                 <h2> Job Description </h2>
                 <p>{item.title}</p>
                 <p>{item.type}</p>
-                <img src={item.company_logo} />  
+                <img src={item.company_logo} alt='decorative'/>  
                 <p>{item.company}</p> 
                 <p>{item.company_url}</p> 
                 <p>{item.location}</p> 

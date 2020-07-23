@@ -82,6 +82,7 @@ a {
   text-decoration: none;
   display: inline-block;
   color: rgb(117, 39, 39);
+  padding: 10px;
 }
 a:hover {
   text-decoration: none;
