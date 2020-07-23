@@ -7,7 +7,7 @@ import Description from './Description';
 let backgroundStyle = {
     backgroundImage: `url( ${ Background } )`,
     width: '100%',
-    height: '3030px',
+    height: 'auto',
     position: 'absolute',
     backgroundPosition: 'center',
     backgroundSize: 'cover',
@@ -25,7 +25,7 @@ class Search extends Component {
         this.state = {
             jobDescription: ' ',
             location: ' ',
-            checked: false
+            checked: true
         };
 
         this.handleChangeDescription = this.handleChangeDescription.bind(this);
@@ -46,61 +46,63 @@ class Search extends Component {
         return (
             <div style={backgroundStyle}>
                 <h2>Job Search Page</h2>
-                <form onSubmit={e => this.props.handleSubmit(e, this.state.jobDescription, this.state.location, this.state.checked)} 
-                style={{display: 'flex'}}
-                >
-                    <p>Job Desc</p>
+                <center>
+                <form onSubmit={e => this.props.handleSubmit(e, this.state.jobDescription, this.state.location, this.state.checked)}>
+                    <p>Job Description</p>
                     <input  
                         type='text'
                         name='jobDescription'
-                        style={{ flex: '3', padding: '1px'}}
+                        //style={{ flex: '3', padding: '1px'}}
                         placeholder='Job Description' 
                         value={this.state.jobDescription} 
                         onChange={this.handleChangeDescription} 
                     />
-                    <p>Loc</p>
+                    <p>Location</p>
                         <input
                         type='text'
-                        style={{ flex: '2', padding: '1px'}}
+                        //style={{ flex: '2', padding: '1px'}}
                         placeholder='Location'
                         value={this.state.location} 
                         onChange={this.handleChangeLocation} 
                     />
-                     <p>F T</p>   
+                     <p>Full Time</p>   
                     <Checkbox 
-                        style={{ flex: '.2', padding: '1px'}}
+                        //style={{ flex: '.2', padding: '1px'}}
                         checked={this.state.checked} 
                         onChange={this.handleCheckbox} 
                     />
-                    <input 
+                    <input
                         type='submit' 
                         value='Search' 
-                        style={{flex: '.7', padding: '1px'}}
+                        //style={{flex: '.7', padding: '1px'}}
                     />
                 </form>
+                
                 <ol>
                     {this.props.items.map(item => (
                         <li key={item.id}>
                             <Link to={'/Description/' +item.title}>
+                                
                                 <hr />
                                 {item.title} {item.type} <br />
-                                {item.company}{','}
+                                {item.company}{', '}
                                 {item.location} 
-                                
+                            
                             </Link>
                             <Route 
                                 path='/Description/:myLink'
                                 render={props => (
-                                <Description
-                                handleChangeDescription={this.handleChangeDescription}
-                                {...props} 
-                                jobDescription={this.state.jobDescription} 
-                                />  
-                              )}  
-                            />
+                                    <Description
+                                    handleChangeDescription={this.handleChangeDescription}
+                                    {...props} 
+                                    jobDescription={this.state.jobDescription} 
+                                    />  
+                                    )}  
+                                    />
                         </li>
                     ))}
                 </ol>
+                </center>
             </div>
         )
     }
