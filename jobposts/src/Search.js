@@ -70,14 +70,13 @@ class Search extends Component {
                         //style={{ flex: '.2', padding: '1px'}}
                         checked={this.state.checked} 
                         onChange={this.handleCheckbox} 
-                    />
+                    /><br />
                     <input
                         type='submit' 
                         value='Search' 
-                        //style={{flex: '.7', padding: '1px'}}
+                        style={{ 'margin': '15px'}}
                     />
                 </form>
-                
                 <ol>
                     {this.props.items.map(item => (
                         <li key={item.id}>

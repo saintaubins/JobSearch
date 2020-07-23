@@ -9,7 +9,7 @@ function Footer() {
     return ( 
        
             <div className='footer'>
-                <h3>API from GitHub Jobs</h3>
+                <h3>Backend API from GitHub Jobs</h3>
             </div>
        
     )

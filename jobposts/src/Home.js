@@ -5,12 +5,12 @@ import Background from './images/back4.jpg';
 let sectionStyle = {
     backgroundImage: `url( ${ Background } )`,
     width: '100%',
-    height: '1300px',
+    height: '1024px',
+    margin: '0',
     position: 'absolute',
     backgroundPosition: 'center',
     backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat'
-    
+    backgroundRepeat: 'no-repeat' 
 };
 //Added React hook use effect, funtion based component
 function Home() {
@@ -18,8 +18,7 @@ function Home() {
         console.log('useEffect was called, added react hooks');
       });
         return (
-            <div>
-                <div style={ sectionStyle }>
+            <div style={ sectionStyle }>
                     <h2>The Home Page</h2>
                     <div> 
                         <center>
@@ -28,9 +27,6 @@ function Home() {
                             </Link> 
                         </center>
                     </div>
-                   
-                </div>
-                
             </div>
         )
 }

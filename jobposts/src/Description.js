@@ -5,7 +5,7 @@ import Background from './images/back5.jpg';
 let sectionStyle = {
     //backgroundImage: `url( ${ Background } )`,
     width: '100%',
-    height: '2500px',
+    height: 'auto',
     position: 'absolute',
     backgroundPosition: 'center',
     backgroundSize: 'cover',

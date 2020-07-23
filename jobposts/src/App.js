@@ -83,7 +83,7 @@ class App extends Component {
       console.log(this.state.items) 
       return (
         <React.Fragment>
-          <Nav handleSubmit={this.handleSubmit} items={this.state.items}/>
+          <Nav handleSubmit={this.handleSubmit} items={this.state.items} />
           <Footer />
         </React.Fragment>
       );
