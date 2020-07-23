@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import './App.css';
-import Background from './images/back5.jpg';
+//import Background from './images/back5.jpg';
 
 let sectionStyle = {
     //backgroundImage: `url( ${ Background } )`,
@@ -26,19 +26,20 @@ class Description extends Component {
       return <div>Loading...</div>;
     } else {
         return (
-            <div style={ sectionStyle }>
-                <h2> Job Description </h2>
-                <p>{item.title}</p>
-                <p>{item.type}</p>
-                <img src={item.company_logo} alt='decorative'/>  
-                <p>{item.company}</p> 
-                <p>{item.company_url}</p> 
-                <p>{item.location}</p> 
-                <div dangerouslySetInnerHTML={{__html: item.description}} />
-                <div dangerouslySetInnerHTML={{__html: item.how_to_apply}} />
-
-                  
-            </div>
+            <center>
+                <div style={ sectionStyle }>
+                    <h2> Job Description </h2>
+                    <p>{item.title}</p>
+                    <p>{item.type}</p>
+                    <img src={item.company_logo} alt='company logo'/>  
+                    <p>{item.company}</p> 
+                    <p>{item.company_url}</p> 
+                    <p>{item.location}</p> 
+                    <div dangerouslySetInnerHTML={{__html: item.description}} />
+                    <div dangerouslySetInnerHTML={{__html: item.how_to_apply}} /> 
+                </div>
+            </center>
+            
         )
     }
 }
