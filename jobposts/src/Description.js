@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import './App.css';
-//import Background from './images/back5.jpg';
+import Background from './images/back2.jpg';
 
 let sectionStyle = {
-    //backgroundImage: `url( ${ Background } )`,
+    backgroundImage: `url( ${ Background } )`,
     width: '100%',
     height: 'auto',
     position: 'absolute',

@@ -50,7 +50,7 @@ class App extends Component {
   fetch(
       url + 
       'description=' + 
-      'python' +
+      'javascript' +
       '&full_time=' +
       true +
       '&location=newyork'
@@ -76,9 +76,9 @@ class App extends Component {
   render() {
     const { error, isLoaded } = this.state;
     if (error) {
-    return <div>The Error: {error.message}</div>;
+    return <div>The fetch error: {error.message}</div>;
     } else if (!isLoaded) {
-      return <div>Loading...</div>;
+      return <div>Sorry still loading...</div>;
     } else {
       console.log(this.state.items) 
       return (
