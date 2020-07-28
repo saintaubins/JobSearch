@@ -4,13 +4,16 @@ import Background from './images/back2.jpg';
 
 let sectionStyle = {
     backgroundImage: `url( ${ Background } )`,
-    width: '100%',
+    width: 'auto',
     height: 'auto',
-    position: 'absolute',
+    position: 'relative',
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
-    backgroundColor: 'lightgrey'
+    borderRadius: '7px',
+    marginTop: '120px', marginLeft: '20px', marginRight: '20px', marginBottom: '70px',
+    boxShadow: '10px 10px 10px #aaaaaa',
+    wordWrap: 'break-word'
     
 };
 class Description extends Component {

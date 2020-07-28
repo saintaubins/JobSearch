@@ -8,7 +8,7 @@ import './App.css';
 class Nav extends Component {
     render() {
         return (
-            <div>
+            <div className='navDiv'>
                 <Router>
                     <div className='nav' >
                         <Link to="/">

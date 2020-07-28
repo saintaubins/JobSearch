@@ -6,12 +6,15 @@ import Description from './Description';
 
 let backgroundStyle = {
     backgroundImage: `url( ${ Background } )`,
-    width: '100%',
+    width: 'auto',
     height: 'auto',
-    position: 'absolute',
+    position: 'relative',
     backgroundPosition: 'center',
     backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat'
+    backgroundRepeat: 'no-repeat',
+    borderRadius: '7px',
+    marginTop: '120px', marginLeft: '20px', marginRight: '20px', marginBottom: '70px',
+    boxShadow: '10px 10px 10px #aaaaaa'
 };
 
 //const url = 'https://cors-anywhere.herokuapp.com/jobs.github.com/positions.json?';
